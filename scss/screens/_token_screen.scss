@@ -1,0 +1,32 @@
+.token-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        // border: 2px solid white;
+        font-family: 'Noto Serif';
+        font-size: 20px;
+
+        div {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .error {
+            color: indianred;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .error-hidden {
+            display: none;
+        }
+    }
+}

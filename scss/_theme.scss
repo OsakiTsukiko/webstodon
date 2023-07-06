@@ -1,0 +1,44 @@
+.wsd-btn-1 {
+    width: fit-content;
+    background: transparent;
+    color: white;
+    font-family: 'Noto Serif';
+    font-size: 17px;
+    cursor: pointer;
+    border: 9px solid transparent;
+    box-sizing: border-box;
+    padding: 0px;
+
+    span {
+        box-sizing: border-box;
+    }
+
+    &:hover {
+        border-image: url('./assets/borders/border_03.png') 9 stretch;
+    }
+
+    &:active {
+        border-image: url('./assets/borders/border_03_bg.png') 9 stretch;
+
+        span {
+            background: url('./assets/borders/border_03_only_bg_1x1.png');
+        }
+    }
+}
+
+.wsd-inp-txt-1 {
+    width: 400px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 7px solid transparent;
+    border-image: url('./assets/borders/border_01.png') 7 stretch;
+    color: white;
+    font-family: 'Noto Serif';
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:focus {
+        outline: none;
+    }
+}

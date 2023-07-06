@@ -1,0 +1,27 @@
+@import './scss/fonts';
+@import './scss/theme';
+
+@import './scss/screen';
+
+html, body {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.main-cont {
+    width: 100%;
+    height: 100%;
+}
+
+.pixel {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}

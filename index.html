@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="index.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/networking.js"></script>
+    <script src="js/screens/instance_selector.js"></script>
+    <script src="js/screens/token.js"></script>
+    
+    <title>Webstodon</title>
+</head>
+<body>
+    <div class="main-cont">
+
+        <!-- LOADING SCREEN -->
+        <div class="screen-cont loading-screen-cont" id="loading-screen-cont">
+            <div class="screen loading-screen">
+                <h1>... Loading ...</h1>
+            </div>
+        </div>
+
+        <!-- INSTANCE SELECTOR SCREEN -->
+        <div class="screen-cont instance-selector-screen-cont" id="instance-selector-screen-cont">
+            <div class="screen instance-selector-screen">
+                <div>
+                    Instance Address
+                    <input class="pixel wsd-inp-txt-1" type="url" placeholder="mastodon.example" id="instance_selector_input">
+                    <div><button class="pixel wsd-btn-1" onclick="instance_selector_enter()"><span>Enter</span></button></div>
+                    <span class="error error-hidden" id="instance_selector_error">ERROR</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TOKEN SCREEN --> <!-- more like auth code but ok -->
+        <div class="screen-cont token-screen-cont" id="token-screen-cont">
+            <div class="screen token-screen">
+                <div>
+                    <span>Auth Code <a target="_blank" id="token_link">(GET ONE)</a></span>
+                    <input class="pixel wsd-inp-txt-1" type="url" placeholder="..." id="token_input">
+                    <div><button class="pixel wsd-btn-1" onclick="token_enter()"><span>Enter</span></button></div>
+                    <span class="error error-hidden" id="token_error">ERROR</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACC SELECTOR SCREEN -->
+        <div class="screen-cont acc-selector-screen-cont screen-cont-selected" id="acc-selector-screen-cont">
+            <div class="screen acc-selector-screen">
+                
+                <div class="title pixel">Select Account</div>
+                <div class="cont pixel" id="acc-selector-cont"></div>
+
+                <div class="btn-cont">
+                    <button class="pixel wsd-btn-1" onclick="load_screen('instance-selector');"><span>Add Account</span></button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

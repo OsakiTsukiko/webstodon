@@ -1,0 +1,19 @@
+@import './screens/instance_selector_screen';
+@import './screens/loading_screen';
+@import './screens/token_screen';
+@import './screens/acc_selector_screen';
+
+.screen-cont {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.screen-cont-selected {
+    display: block;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+}

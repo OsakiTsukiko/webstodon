@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.wsd-btn-1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: transparent;
+  color: white;
+  font-family: "Noto Serif";
+  font-size: 17px;
+  cursor: pointer;
+  border: 9px solid transparent;
+  box-sizing: border-box;
+  padding: 0px;
+}
+.wsd-btn-1 span {
+  box-sizing: border-box;
+}
+.wsd-btn-1:hover {
+  -o-border-image: url("./assets/borders/border_03.png") 9 stretch;
+     border-image: url("./assets/borders/border_03.png") 9 stretch;
+}
+.wsd-btn-1:active {
+  -o-border-image: url("./assets/borders/border_03_bg.png") 9 stretch;
+     border-image: url("./assets/borders/border_03_bg.png") 9 stretch;
+}
+.wsd-btn-1:active span {
+  background: url("./assets/borders/border_03_only_bg_1x1.png");
+}
+
+.wsd-inp-txt-1 {
+  width: 400px;
+  background: transparent;
+  box-sizing: border-box;
+  border: 7px solid transparent;
+  -o-border-image: url("./assets/borders/border_01.png") 7 stretch;
+     border-image: url("./assets/borders/border_01.png") 7 stretch;
+  color: white;
+  font-family: "Noto Serif";
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wsd-inp-txt-1:focus {
+  outline: none;
+}
+
+.instance-selector-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instance-selector-screen div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: "Noto Serif";
+  font-size: 20px;
+}
+.instance-selector-screen div div {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: flex-end;
+}
+.instance-selector-screen div .error {
+  color: indianred;
+  font-size: 16px;
+  text-align: center;
+}
+.instance-selector-screen div .error-hidden {
+  display: none;
+}
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Noto Serif";
+}
+
+.token-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.token-screen div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: "Noto Serif";
+  font-size: 20px;
+}
+.token-screen div div {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: flex-end;
+}
+.token-screen div .error {
+  color: indianred;
+  font-size: 16px;
+  text-align: center;
+}
+.token-screen div .error-hidden {
+  display: none;
+}
+
+.acc-selector-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.acc-selector-screen .title {
+  width: 25%;
+  box-sizing: border-box;
+  border: 7px solid transparent;
+  -o-border-image: url("./assets/borders/border_01_tab_selected.png") 7 stretch;
+     border-image: url("./assets/borders/border_01_tab_selected.png") 7 stretch;
+  color: white;
+  font-family: "Noto Serif";
+  position: relative;
+  bottom: -3px;
+  background: black;
+  text-align: center;
+}
+.acc-selector-screen .cont {
+  width: 50%;
+  height: 60%;
+  background: transparent;
+  box-sizing: border-box;
+  border: 7px solid transparent;
+  -o-border-image: url("./assets/borders/border_01.png") 7 stretch;
+     border-image: url("./assets/borders/border_01.png") 7 stretch;
+  color: white;
+  font-family: "Noto Serif";
+  padding: 5px;
+  overflow-y: scroll;
+}
+.acc-selector-screen .cont .acc {
+  height: 50px;
+  box-sizing: border-box;
+  border: 7px solid transparent;
+  -o-border-image: url("./assets/borders/border_02.png") 7 stretch;
+     border-image: url("./assets/borders/border_02.png") 7 stretch;
+  display: flex;
+  cursor: pointer;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+.acc-selector-screen .cont .acc:hover {
+  opacity: 1;
+}
+.acc-selector-screen .cont .acc img {
+  height: 100%;
+}
+.acc-selector-screen .cont .acc span {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acc-selector-screen .btn-cont {
+  width: 50%;
+  box-sizing: border-box;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.screen-cont {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.screen-cont-selected {
+  display: block;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+.main-cont {
+  width: 100%;
+  height: 100%;
+}
+
+.pixel {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}/*# sourceMappingURL=style.css.map */
